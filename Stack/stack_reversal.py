@@ -10,5 +10,3 @@ def reverse_file(filename):
     with open(filename, "w") as second:
         while not stack.is_empty():
             second.write(new_stack.pop() + "\n")
-
-c
