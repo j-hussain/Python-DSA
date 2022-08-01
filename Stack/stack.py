@@ -14,7 +14,7 @@ class Stack:
         # returns True if stack is empty
         return len(self._data) == 0
 
-    def top(self) -> Union[int, str]:
+    def top(self) -> str:
         # return element on top of stack
         if self.is_empty():
             raise Empty("No elements in stack.")
@@ -24,3 +24,6 @@ class Stack:
         if self.is_empty():
             raise Empty("No elements in stack.")
         return self._data.pop()
+
+    def push(self, e: Union[str, int]) -> None:
+        self._data.append(e)
